@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBini</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/bini.jpg" />
+  </head>
+  <body>
+    <div class="video-container">
+      <video
+        class="video-background"
+        id="backgroundVideo"
+        muted
+        loop
+        playsinline
+        autoplay
+      >
+        <source
+          src="https://raw.githubusercontent.com/RiazRep/music-import/main/Music/bini.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <div class="album-info">
+      <img
+        src="assets/img/bini.jpg"
+        alt="Album Cover"
+        class="album-cover"
+        id="albumCover"
+      />
+      <div class="song-details">
+        <div class="song-title">Dreaming to the Glowing Place</div>
+      </div>
+    </div>
+
+    <div class="spectrum-container" id="spectrumContainer"></div>
+
+    <audio id="backgroundAudio" loop autoplay>
+      <source src="assets/song/ost.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
