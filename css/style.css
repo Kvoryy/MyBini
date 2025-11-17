@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
   color: white;
   background: #000;
@@ -51,11 +50,24 @@ body {
   height: 5px;
   background: #ffffff;
   border-radius: 4px 4px 0 0;
-  transition: height 0.1s ease-out;
+  transition: height 0.5 s ease-out;
   will-change: height;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
 .spectrum-bar.active {
   background: #ffffff;
+}
+
+.spectrum-bar::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background: inherit;
+  opacity: 0.3;
+  filter: blur(6px);
+  backface-visibility: hidden;
 }
